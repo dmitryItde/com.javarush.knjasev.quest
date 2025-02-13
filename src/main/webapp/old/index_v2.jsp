@@ -146,7 +146,7 @@
             </div>
 
             <h2>Выберите квест:</h2>
-            <form action="../index.jsp" method="get">
+            <form action="index.jsp" method="get">
                 <!-- Используем JSTL для перебора списка квестов -->
                 <c:forEach var="quest" items="${questList}">
                     <div class="form-check">
@@ -175,7 +175,7 @@
             <c:when test="${endingType eq 'win'}">
                 <p>${questionText} Вы победили!</p>
                 <!-- Кнопка для рестарта игры -->
-                <form method="post" action="../index.jsp">
+                <form method="post" action="index.jsp">
                     <input type="hidden" name="restart" value="true">
                     <button type="submit" class="btn btn-warning">Начать игру заново</button>
                 </form>
@@ -183,7 +183,7 @@
             <c:when test="${endingType eq 'loss'}">
                 <p>${questionText} Вы проиграли...</p>
                 <!-- Кнопка для рестарта игры -->
-                <form method="post" action="../index.jsp">
+                <form method="post" action="index.jsp">
                     <input type="hidden" name="restart" value="true">
                     <button type="submit" class="btn btn-warning">Начать игру заново</button>
                 </form>
@@ -207,7 +207,7 @@
 
 
                 <p>${questionText}</p>
-                <form method="post" action="../index.jsp">
+                <form method="post" action="index.jsp">
                     <c:forEach var="ans" items="${answersList}">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="answer"

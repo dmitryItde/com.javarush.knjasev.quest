@@ -9,5 +9,5 @@ Dmitry Knjasev
 - Java Jakarta 9.1
 - Tomcat 10.1.34
 - Deployment quest:war exploded
-- Application contest "/", т.е. квест запускается на http://localhost:8080/
+- Application contest "/", т.е. квест запускается на http://localhost:8080
 
